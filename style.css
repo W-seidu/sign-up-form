@@ -4,11 +4,17 @@
     box-sizing: border-box;
 }
 
+:root {
+    --section-color: rgb(172, 167, 167);
+ }
+  
+
 body {
     background-image: url('images/bg.jpg');
     background-size: cover; 
     background-repeat: repeat;
     background-attachment: fixed;
+    font-family: Geneva, Verdana, sans-serif;
 }
 
 .form-section {
@@ -16,20 +22,66 @@ body {
     top:0;
     bottom:0;
     right: 0;
-    left: 50%;
+    left: 35%;
     background: white;
 }
 
 .welcome-para {
     height: 30%;
-    background-color: grey;
+    background-color: var(--section-color);
+}
+
+.welcome-text {
+    position: relative;
+    font-size: 1.1rem;
+    font-weight: bold;
+
+    top: 10%;
 }
 
 form {
-    height: 40%;
+    height: 50%;
 }
 
 .action-links {
-    height: 30%;
-    background-color: grey;
+    height: 20%;
+    background-color: var(--section-color);
+}
+
+ul {
+    display: flex;
+    gap: min(55px, 30vh);
+    margin: 30px 5px;
+    list-style-type: none;
+}
+
+form {
+    appearance: none;
+}
+
+label {
+    display: block;
+}
+
+input {
+  font-family: inherit;
+  font-size: 100%;
+  width: 170px;
+}
+
+button {
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-left: 5px;
+    padding: 10px 25px;
+}
+
+.action-text {
+    margin-left: 5px;
+    margin-top: 5px; 
+}
+
+a {
+    text-decoration: none;
 }
