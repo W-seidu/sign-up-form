@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('images/bg.jpg');
+    background-size: cover; 
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.form-section {
+    position: absolute;
+    top:0;
+    bottom:0;
+    right: 0;
+    left: 50%;
+    background: white;
+}
+
+.welcome-para {
+    height: 30%;
+    background-color: grey;
+}
+
+form {
+    height: 40%;
+}
+
+.action-links {
+    height: 30%;
+    background-color: grey;
+}
