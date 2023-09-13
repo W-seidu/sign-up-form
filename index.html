@@ -8,53 +8,69 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="logo-container">
+        <img src="images/robot_logo.png" alt="robot logo">
+        <h1 class="logo-text">SWOD</h1>
+    </div>
     <section>
     <div class="form-section">
         <div class="welcome-para">
         <p class="welcome-text">
-            Shaping Tomorrow's World Today
-            Experience the future of robotics and automation with Sword Robotics. 
+            Experience the future of robotics and automation with Swod Robotics. 
             Our cutting-edge solutions are revolutionizing industries, making them smarter and more efficient.
-            Join us in reshaping the world through innovation
+        <p class="welcome-text">Sign up now to get started !</p>       
         </p>
         </div>
-        <form>
+        <form method="GET" action="#">
+        <fieldset class="user-details">
             <ul>
                 <li>
                     <label for="first-name">First Name</label>
-                    <input type="text" id="first-name" name="firstName">        
+                    <input type="text" id="first-name" name="userFirstName" required />  
+                    <span></span>      
                 </li>
                 <li>
                     <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" name="lastName">
+                    <input type="text" id="last-name" name="userLastName" required />
+                    <span></span> 
                 </li>
             </ul>
             <ul>   
                 <li>
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="userEmail" required />
+                    <span></span> 
                 </li>
                 <li>
                     <label for="tel-no">Phone Number</label>
-                    <input type="tel" id="tel-no" name="telNum">
+                    <input type="tel" id="tel-no" name="userTelNum" required />
+                    <span></span> 
                 </li>
             </ul> 
             <ul>
                 <li>
                     <label for="password">Password</label>
-                    <input type="password" id="password" name="password">
+                    <input type="password" id="password" name="userPassword" required />
+                    <span></span> 
                 </li>
                 <li>
                     <label for="confirm-password">Confirm Password</label>
-                    <input type="password" id="confirm-passsword" name="confirmPassword">
+                    <input type="password" id="confirm-passsword" name="confirmUserPassword" required />
+                    <span></span> 
                 </li>
             </ul>
+        </fieldset>
+        <fieldset class="action">
+            <ul class="action-links">
+                <li><button type="submit">Create Account</button></li>
+                <li class="action-text">Already have an account? <a href="http://www.google.com">Log in</a></li>
+            </ul>
+            
+        </fieldset>
         </form>
-        <div class="action-links">
-            <button type="submit">Create Account</button>
-            <p class="action-text">Already have an account? <a href="http://www.google.com">Log in</a></p>
-        </div>
+            
     </div>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
