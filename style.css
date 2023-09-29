@@ -35,16 +35,19 @@ body {
     margin-top: 93px;
     width: 40%;
     opacity: 0.75;
+    /* z-index: 1; */
 }
 
 .logo-container img {
-    margin-left: 100px;
+    margin-left: 10px;
     background: goldenrod;
+    flex-shrink: 1;
 }
 
 .logo-text {
     font-family: 'origin_tech_demoregular';
-    font-size: 5rem;
+    font-size: 4.5rem;
+    flex-shrink: 2;
     font-weight: bold;
     margin-top: 25px;
 }
@@ -86,6 +89,7 @@ body {
 }
 
 .action-links {
+    display: flex;
     flex-direction: column;
     gap: 20px;
     /* align-items: center; */
@@ -143,7 +147,6 @@ input:valid + span::before {
     color: green;
 }
 
-
 button {
     border-radius: 10px;
     font-size: 1.0rem;
@@ -166,3 +169,125 @@ a:hover {
     color: var(--hover-color);
 }
 
+@media (max-width: 800px) {
+    .form-section {
+    position: absolute;
+    top: 15%;
+    bottom:0;
+    right: 0;
+    left: 0;
+    background: var(--section-color);
+    }
+
+    .logo-container {
+    display: flex;
+    height: 96px;
+    margin-top: 0;
+    width: 100%;
+    opacity: 0.7;
+    z-index: 1;
+    }
+
+    .logo-container img {
+    margin-left: 20vw;
+    background: goldenrod;
+    }
+
+    .logo-text {
+    font-family: 'origin_tech_demoregular';
+    font-size: 4.5rem;
+    flex-shrink: 2;
+    font-weight: bold;
+    margin-top: 25px;
+    }
+
+    .action-links {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+}
+
+}
+
+@media (max-width: 480px) {
+    .logo-container {
+    display: flex;
+    min-height: 18vh;
+    }
+
+    .logo-container img {
+    margin-left: 15vw;
+    height: 18vh;
+    }
+
+    .logo-text {
+    font-family: 'origin_tech_demoregular';
+    font-size: 4.1rem;
+    font-weight: bold;
+    margin-top: 10px;
+    }
+
+    .form-section {
+    position: absolute;
+    top: 18%;
+    height: 150vh;
+    background: var(--section-color);
+    }
+
+    .welcome-para {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    min-height: 35vh;
+    background-color: var(--section-color);
+    border: 20px solid var(--section-color);
+    }
+
+    .welcome-text {
+    position: relative;
+    font-size: 1.15rem;
+    margin-top: -10px;
+    }
+
+    ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    }
+
+    .user-details {
+    min-height: 150vh;
+    border: 2px solid black;
+    }
+
+    .action {
+    min-height: 40vh;
+    margin-top: -150px;
+    }
+
+    .action-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    }
+
+    label {
+    display: block;
+    margin-top: -5px;
+    }
+
+    input {
+    font-family: inherit;
+    font-size: 100%;
+    width: 300px;
+    height: 30px;
+    }
+
+    input + span::before {
+    position: absolute;
+    right: -25px;
+    bottom: -3px;
+    }
+
+}
