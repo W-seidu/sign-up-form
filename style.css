@@ -213,7 +213,7 @@ a:hover {
 @media (max-width: 480px) {
     .logo-container {
     display: flex;
-    min-height: 18vh;
+    width: 250vw;
     }
 
     .logo-container img {
@@ -223,31 +223,33 @@ a:hover {
 
     .logo-text {
     font-family: 'origin_tech_demoregular';
-    font-size: 4.1rem;
+    font-size: 4.0rem;
     font-weight: bold;
     margin-top: 10px;
     }
 
     .form-section {
     position: absolute;
-    top: 18%;
-    height: 150vh;
+    top: 20%;
+    min-height: 200vh;
+    width: 250vw;
     background: var(--section-color);
     }
 
     .welcome-para {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     flex-direction: column;
-    min-height: 35vh;
+    min-height: 45vh;
     background-color: var(--section-color);
     border: 20px solid var(--section-color);
     }
 
     .welcome-text {
     position: relative;
-    font-size: 1.15rem;
+    width: 45ch;
     margin-top: -10px;
+    flex-wrap: wrap;
     }
 
     ul {
@@ -263,12 +265,12 @@ a:hover {
 
     .action {
     min-height: 40vh;
-    margin-top: -150px;
     }
 
     .action-links {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 20px;
     }
 
@@ -290,4 +292,7 @@ a:hover {
     bottom: -3px;
     }
 
+    ul, .action-links {
+        margin-left: 30px;
+    }
 }
